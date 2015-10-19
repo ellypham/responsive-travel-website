@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="flickity.css" media="screen">
+	<script src="flickity.js"></script>
+</head>
+<body>
+	
+	<header class="top">
+	<section class="bodyWrapper">
+
+	<!-- Navigation Bar 1 -->
+		<div class="headWrapper">
+		<nav class="nav1">
+			<div class="headerLogo">
+				<h4>Let's<img src="assets/icons/logo.png">Travel</h4>
+			</div>
+			<div class="nav1list">
+				<i class="fa fa-bars fa-2x"></i>
+				<ul class="hamburgerNav">
+					<li> <a href="#">Home <i class="fa fa-chevron-down"></i></a></li>
+					<li> <a href="#">Hotels <i class="fa fa-chevron-down"></i></a>
+						<ul class="menuSub">
+							<li class="listSub"><a href="#">Hotel 1</a></li>
+							<li class="listSub"><a href="#">Hotel 2</a></li>
+							<li class="listSub"><a href="#">Hotel 3</a></li>
+							<li class="listSub"><a href="#">Hotel 4</a></li>
+						</ul>
+					</li>
+					<li> <a href="#">Flights <i class="fa fa-chevron-down"></i></a>
+						<ul class="menuSub">
+							<li class="listSub"><a href="#">Flight 1</a></li>
+							<li class="listSub"><a href="#">Flight 2</a></li>
+							<li class="listSub"><a href="#">Flight 3</a></li>
+							<li class="listSub"><a href="#">Flight 4</a></li>
+						</ul>
+					</li>
+					<li> <a href="#">Cars <i class="fa fa-chevron-down"></i></a>
+						<ul class="menuSub">
+							<li class="listSub"><a href="#">Car 1</a></li>
+							<li class="listSub"><a href="#">Car 2</a></li>
+							<li class="listSub"><a href="#">Car 3</a></li>
+							<li class="listSub"><a href="#">Car 4</a></li>
+						</ul>
+					</li>
+					<li> <a href="#">Cruises <i class="fa fa-chevron-down"></i></a>
+						<ul class="menuSub">
+							<li class="listSub"><a href="#">Cruise 1</a></li>
+							<li class="listSub"><a href="#">Cruise 2</a></li>
+							<li class="listSub"><a href="#">Cruise 3</a></li>
+							<li class="listSub"><a href="#">Cruise 4</a></li>
+						</ul>
+					</li>
+					<li> <a href="#">Tour <i class="fa fa-chevron-down"></i></a>
+						<ul class="menuSub">
+							<li class="listSub"><a href="#">Tour 1</a></li>
+							<li class="listSub"><a href="#">Tour 2</a></li>
+							<li class="listSub"><a href="#">Tour 3</a></li>
+							<li class="listSub"><a href="#">Tour 4</a></li>
+						</ul>
+					</li>
+					<li class="navNone"> <a href="#">Pages <i class="fa fa-chevron-down"></i></a></li>
+					<li class="navNone"> <a href="#">Shortcodes <i class="fa fa-chevron-down"></i></a></li>
+					<li class="navNone"> <a href="#">Bonus <i class="fa fa-chevron-down"></i></a></li>
+				</ul>
+			<div>	
+		</div>
+		</nav>
+	<!-- /Navigation Bar -->
+
+	
+	<div class="mainWrapper">
+	<!-- Header title -->
+			<div class="headerTitle">
+				<h6>London <img src="assets/icons/cloud.png"> +30&#176 C</h6>
+				<div><h1>Amazing Italy</h1></div>
+				<div><h1>7 Day Tour</h1></div>
+				<p class="titleSub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem asperiores aliquam, sapiente ea vel quasi fuga perferendis rerum autem.</p>
+				<a href="#"><button class="topButton"><img src="assets/icons/marker.png" alt=""> View Our Tours</button></a>
+			</div>
+
+			<div class="secondHeaderTitle">
+				<h6>London <img src="assets/icons/cloud.png"> +30&#176 C</h6>
+				<div><h1>Where would you like to go?</h1></div>
+			</div>
+	<!-- /Header title -->
+
+	<!-- Navigation Bottom -->
+		<nav class="nav2">
+			<div class="nav2A">
+				<ul>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Flights</a></li>
+					<li><a href="#">Cars</a></li>
+					<li><a href="#">Cruises</a></li>
+					<li><a href="#">Activities</a></li>
+				</ul>
+			</div>
+			<div class="nav2form">
+				<!-- <div>
+					<p>Your Destination</p>
+					<p><img src="assets/icons/marker-2.png"> Enter a destination or hotel name</p>
+				</div> -->
+
+				<div class="destination">
+					<p>Your Destination</p>
+					<label for="serach"><img src="assets/icons/marker-2.png"></label>
+					<input type="search" class="search" placeholder="Enter a destination or hotel name">
+				</div>
+	
+				<div class="nav2responsive">
+					<p>Check In</p>
+					<p><img src="assets/icons/calendar.png"> <span class="lightgrey">Mm/Dd/Yy</p></span>
+				</div>
+
+				<div class="nav2responsive">
+					<p>Check Out</p>
+					<p><img src="assets/icons/calendar.png"> <span class="lightgrey">Mm/Dd/Yy</p></span>
+				</div>
+
+				<div class="nav2responsive">
+					<p>Kids</p>
+					<p><span class="lightgrey">01 kids</span><i class="fa fa-chevron-down"></i></p>
+				</div>
+				<div class="nav2responsive">
+					<p>Adults</p>
+					<p><span class="lightgrey">01 adults</span> <i class="fa fa-chevron-down"></i></p>
+				</div>
+
+				<div class="nav2responsive">
+					<p>Room</p>
+					<p><span class="lightgrey">01 room</span> <i class="fa fa-chevron-down"></i></p>
+				</div>
+
+				<div>
+					<a href="#"><button class="searchNowButton"><img src="assets/icons/search.png">Search Now</button></a>
+				</div>
+		</nav>
+
+	</section>
+	<!-- /Navigation bottom -->
+	</header>
+	
+
+	<!-- Sea Tours Section -->
+	<section class="seaTours">
+		<div class="subTitles">
+			<h2>The Best Sea Tours</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		</div>
+		<ul class="seaGallery">
+			<li class="bolivia">
+				<!-- <img src="assets/images/tour-1.jpg" alt="bolivia sea tour"> -->
+				<h3>Bolivia</h3>
+				<img src="assets/icons/five-star.png">
+				<h4>From <strong>$860</strong></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber">  2 </span>Adults, <span class="groupnumber"> 1</span> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"><a href="#"></a></p>
+			</li>
+			<li class="patagonia">
+				<!-- <img src="assets/images/tour-2.jpg" alt="patagonia sea tour"> -->
+				<h3>Patagonia</h3>
+				<img src="assets/icons/five-star.png">
+				<h4>From <b>$760</b></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber"> 2 </span>Adults, <span class="groupnumber"> 1</span> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"></p>
+			</li>
+			<li class="torresDel">
+				<!-- <img src="assets/images/tour-2.jpg" alt="patagonia sea tour"> -->
+				<h3>Torres Del Paine</h3>
+				<img src="assets/icons/five-star.png">
+				<h4>From <b>$600</b></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber">  2 </span>Adults, <span class="groupnumber"> 1</span> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"></p>
+			</li>
+
+			<li class="santorini">
+				<!-- <img src="assets/images/tour-4.jpg" alt="santorini sea tour"> -->
+				<h3>Santorini</h3>
+				<img src="assets/icons/four-stars.png">
+				<h4>From <b>$1050</b></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber">  2 </b>Adults, </span>1</b> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"></p>
+			</li>
+
+			<li class="turkey">
+				<!-- <img src="assets/images/tour-5.jpg" alt="turkey sea tour"> -->
+				<h3>Turkey</h3>
+				<img src="assets/icons/four-stars.png">
+				<h4>From <b>$500</b></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber">  2 </span>Adults, <span class="groupnumber"> 1</span> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"></p>
+			</li>
+			<li class="china">
+			<!-- 	<img src="assets/images/tour-6.jpg" alt="china sea tour"> -->
+				<h3>China</h3>
+				<img src="assets/icons/four-stars.png">
+				<h4>From <b>$500</b></h4>
+			<div class="seaTourGroup">
+				<div class="seaToursPersonDates">
+					<p><img src="assets/icons/people.png"><span class="groupnumber">  2 </span>Adults, <span class="groupnumber"> 1</span> kids</p>
+					<p><img src="assets/icons/calendar.png"> July <span class="groupnumber"> 19th</span> to July <span class="groupnumber"> 26th</span></p>
+				</div>
+				<button class="buttonSea"><a href="#"><img src="assets/icons/flag.png"> View More</a></button>
+			</div>
+			<p class="overlay"></p>
+			</li>
+		</ul>
+	</section>
+
+	<!-- /Sea Tours Section -->
+
+	<!-- Bavarian Packages	 -->
+	<!-- This is also a flickity section as well -->
+	<section class="bavariaPackages">
+	<div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+		<div class="gallery-cell1">
+			<h3>From $960</h3>
+			<img src="assets/icons/five-star.png">
+			<h2>Bavaria Vacation Packages</h2>
+			<p>July <span class="groupnumber"> 10th</span> to July <span class="groupnumber"> 26th</span></p>
+		</div>
+		<div class="gallery-cell2">
+			<h3>From $800</h3>
+			<img src="assets/icons/five-star.png">
+			<h2>Thailand Vacation Packages</h2>
+			<p>July <span class="groupnumber"> 10th</span> to July <span class="groupnumber"> 26th</span></p>
+		</div>
+		<div class="gallery-cell3">
+			<h3>From $800</h3>
+			<img src="assets/icons/five-star.png">
+			<h2>Indonesia Vacation Packages</h2>
+			<p>July <span class="groupnumber"> 10th</span> to July <span class="groupnumber"> 26th</span></p>
+		</div>
+		<div class="gallery-cell4">
+			<h3>From $800</h3>
+			<img src="assets/icons/five-star.png">
+			<h2>Hong Kong Vacation Packages</h2>
+			<p>July <span class="groupnumber"> 10th</span> to July <span class="groupnumber"> 26th</span></p>
+		</div>
+	</section>
+
+	<!-- /Bavarian Packages -->
+
+	<!-- Special Offers -->
+	<section class="specialOffers">
+		<div class="subTitles">
+			<h2>Special Offers</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. aliquam.</p>
+		</div>
+		<div class="specialDetails">
+		<ul>
+			<li class="greeceSpecial">
+				<div class="offersCountry">
+					<img src="assets/icons/five-star.png">
+					<h3>Greece</h3>
+				</div>
+				<div class="chevLeft">
+					<i class="fa fa-chevron-circle-left fa-3x"></i>
+				</div>
+				<div class="detailSpecialOffers">
+					<div class="detailTourNumber">
+						<p><span class="numbers">30</span> Tours</p>
+					</div>
+					<div class="detailCities">
+						<p><span class="numbers">24</span> Cities</p>
+					</div>
+					<div class="detailHotels">
+						<p><span class="numbers">90</span> Hotels</p>
+					</div>
+				</div>
+
+				<div class="detailOffers">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nemo nostrum, assumenda.</p>
+				</div>
+			
+				<button class="specialButton"><a href="#">View More</a></button>
+			</li>
+			<li class="chinaSpecial">
+				<div class="offersCountry">
+					<img src="assets/icons/five-star.png">
+					<h3>China</h3>
+				</div>
+				<div class="detailSpecialOffers">
+					<div class="detailTourNumber">
+						<p><span class="numbers">58</span> Tours</p>
+					</div>
+					<div class="detailCities">
+						<p><span class="numbers">49</span> Cities</p>
+					</div>
+					<div class="detailHotels">
+						<p><span class="numbers">70</span> Hotels</p>
+					</div>
+				</div>
+
+				<div class="detailOffers">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nemo nostrum, assumenda.</p>
+				</div>
+
+				<button class="specialButton"><a href="#">View More</a></button>
+			</li>
+			<li class="canadaSpecial">
+				<div class="offersCountry">
+					<img src="assets/icons/five-star.png">
+					<h3>Canada</h3>
+				</div>
+				<div class="chevRight">
+					<i class="fa fa-chevron-circle-right fa-3x"></i>
+				</div>
+				<div class="detailSpecialOffers">
+					<div class="detailTourNumber">
+						<p><span class="numbers">30</span> Tours</p>
+					</div>
+					<div class="detailCities">
+						<p><span class="numbers">24</span> Cities</p>
+					</div>
+					<div class="detailHotels">
+						<p><span class="numbers">90</span> Hotels</p>
+					</div>
+				</div>
+
+				<div class="detailOffers">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nemo nostrum, assumenda.</p>
+				</div>
+				<button class="specialButton"><a href="#">View More</a></button>
+				
+			</li>
+		</ul>
+		</div>
+	</section>
+	<!-- /Special Offers -->
+
+	<!-- Most Popular Travel Countries -->
+	<section class="popularCountries">
+	<div class="subTitles">
+			<h2>Most Popular Travel Countries</h2>
+			<p>lorem ipsum dolar sit amet, consectetur nemo nostrum.</p>
+	</div>
+	<div class="popCountryWrapper">
+	<div class="italyEurope">
+		<div class="galleryPopular">
+			<ul>
+				<li class="maecenas">
+					<h4>Maecenas Sit Amet</h4>
+					<p><span class="tealfont">From $235</span> Per Person</p>
+				</li>
+				<li class="aenean">
+					<h4>Aenean Iaculis Enim</h4>
+					<p><span class="tealfont">From $180</span> Per Person</p>
+				</li>	
+				<li class="pellentesque">
+					<h4>Pellentesque Tempus</h4>
+					<p><span class="tealfont">From $195</span> Per Person</p>
+				</li>
+				<li class="donec">
+					<h4>Donec Id Maximus</h4>
+					<p><span class="tealfont">From $350</span> Per Person</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="popGalleryContent">
+			<h3>Italy, Europe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nisi, odio. Esse velit, culpa repellendus eius consequuntur repudiandae a officia aspernatur labore, quam, id, hic at ullam reprehenderit incidunt cumque.</p>
+
+			<h5>Best Cities</h5>
+			<div class="bestCities">
+				<div class="group1">
+				<ul>
+					<li>Rome</li>
+					<li>Venice</li>
+					<li>Pisa</li>
+					<li>Naples</li>
+				</ul>
+				</div>
+				<div class="group2">
+				<ul>
+					<li>Bologna</li>
+					<li>Florence</li>
+					<li>Genoa</li>
+					<li>Turin</li>
+				</ul>
+				</div>
+				<div class="group3">
+				<ul>
+					<li>Milan</li>
+					<li>Capri</li>
+					<li>Matera</li>
+					<li>Pompeii</li>
+				</ul>
+				</div>
+			</div>
+
+			<a href="#"><button class="placeButton"><img src="assets/icons/flag.png"> View All Places</button></a>
+		</div>
+	</div>
+
+	<div class="franceEurope">
+		<div class="popGalleryContent2">
+			<h3>France, Europe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nisi, odio. Esse velit, culpa repellendus eius consequuntur repudiandae a officia aspernatur labore, quam, id, hic at ullam reprehenderit incidunt cumque.</p>	
+
+			<h5>Best Cities</h5>
+			<div class="bestCities2">
+				<div class="group1">
+				<ul>
+					<li>Rome</li>
+					<li>Venice</li>
+					<li>Pisa</li>
+					<li>Naples</li>
+				</ul>
+				</div>
+				<div class="group2">
+				<ul>
+					<li>Bologna</li>
+					<li>Florence</li>
+					<li>Genoa</li>
+					<li>Turin</li>
+				</ul>
+				</div>
+				<div class="group3">
+				<ul>
+					<li>Milan</li>
+					<li>Capri</li>
+					<li>Matera</li>
+					<li>Pompeii</li>
+				</ul>
+				</div>
+			</div>
+
+			<a href="#"><button class="placeButton"><img src="assets/icons/flag.png"> View All Places</button></a>
+		
+		</div>
+		
+		<div class="galleryPopular">
+			<ul class="popGal" >
+				<li class="donec2">
+					<h4>Donec Id Maximus</h4>
+					<p><span class="tealfont">From $350</span> Per Person</p>
+				</li>
+				<li class="pellentesque2">
+					<h4>Pellentesque Tempus</h4>
+					<p><span class="tealfont">From $195</span> Per Person</p>
+				</li>
+				<li class="aenean2">
+					<h4>Aenean Iaculis Enim</h4>
+					<p><span class="tealfont">From $180</span> Per Person</p>
+				</li>	
+				<li class="maecenas2">
+					<h4>Maecenas Sit Amet</h4>
+					<p><span class="tealfont">From $235</span> Per Person</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	</div>
+
+
+	</section>
+	<!-- /Most Popular travel countries -->
+
+	<!-- Footer Section -->
+	<footer>
+	<div class="footerWrapper">
+		<div class="mainFooter">
+			<div class="bottomLogo">
+				<h4>Let's<img src="assets/icons/logo.png">Travel</h4>
+			</div>	
+			<div class="tourBest">
+				<p>Best Tours</p>
+				<ul>
+					<li><a href="#">Camping holidays</a></li>
+					<li><a href="#">Self-catering holidays</a></li>
+					<li><a href="#">Safaris and wildlife</a></li>
+					<li><a href="#">Activity and adventure</a></li>
+					<li><a href="#">Food and wine holidays</a></li>
+				</ul>
+			</div>	
+			
+			<div class="popCount">
+				<p>Popular Countries</p>
+				<div class="popCountDiv">
+				<div class="popCount1">
+					<ul>
+						<li><a href="#">France</a></li>
+						<li><a href="#">Spain</a></li>
+						<li><a href="#">Ukraine</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">India</a></li>
+					</ul>
+				</div>
+
+				<div class="popCount2">
+					<ul>
+						<li><a href="#">France</a></li>
+						<li><a href="#">Spain</a></li>
+						<li><a href="#">Ukraine</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">India</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="social">
+				<p>Follow Us:</p>
+					<div class="socialSection">
+				<div class="socialButtons">
+				<ul>
+					<li class="facebook"><a href="#"><i class="fa fa-facebook"></i> facebook</a></li>
+					<li class="twitter"><a href="#"><i class="fa fa-twitter"></i> twitter</a></li>
+					<li class="google"><a href="#"><i class="fa fa-google-plus"></i> google</a></li>
+					<li class="pinterest"><a href=""><i class="fa fa-pinterest-p"></i> pinterest</a>
+					</li>
+				</ul>
+				</div>
+
+				<div class="numberButtons">
+				<ul>
+					<li class="numbers">12</li>
+					<li class="numbers">27</li>
+					<li class="numbers">51</li>
+					<li class="numbers">70</li>
+				</ul>
+				</div>
+					</div>
+			</div>
+				
+			<div class="subscribe">
+				<p>Subscribe</p>
+				<form action="subscribeMe" class="subs">
+					<div class="inputBlockemail">
+						<input type="Email" class="email" placeholder="Enter your email">
+						<img src="assets/icons/envelope.png">
+					</div>
+					<div class="inputBlocksubmit">
+						<input type="Submit" class="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="bottomFooter">
+		<div class="bottomFooterWrapper">
+			<nav class="navFooter">
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Faq</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Forum</a></li>
+				</ul>
+			</nav>
+			<div class="copyright">
+				<p>&#169 2015 All rights reserved. LET'S TRAVEL</p>
+			</div>
+		</div>
+	</div>
+
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="main.js"></script>
+	
+
+
+
+
+</body>
+</html>

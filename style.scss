@@ -1,0 +1,1256 @@
+@import 'setup';
+// font styles
+$titleFont:'Roboto Condensed', sans-serif;
+$bodyFont:'Source Sans Pro', sans-serif;
+$socialFont:'Dosis', sans-serif;
+
+// Colors
+$teal: #4ae5d1;
+$white: #ffffff;
+$fontblack: #222222;
+$lightgrey: #c2c2c2;
+$footblack: #1b1b1b;
+$navblack: #141414;
+$facebook: #3B5998;
+$twitter: #55acee;
+$google: #d34836;
+$pinterest: #C92228;
+
+@mixin fontSize($scale) {
+		font-size: $scale * 1px;
+		font-size: ($scale / 10) * 1rem;
+}
+
+// Common Styles
+html{
+	font-size:62.5%;
+}
+
+body{
+	font-family: $bodyFont;
+	color: $white;
+	font-weight: 400;
+	@include fontSize(12);
+	text-align: center;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+
+a{
+	text-decoration: none;
+	color: $white;
+}
+
+img{
+	max-width: 100%;
+}
+
+// Typography
+
+h1{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	color: $white;
+	letter-spacing: 0.5rem;
+	font-weight: 700;
+	@include fontSize(50);
+
+}
+
+h2{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	color: $white;
+	@include fontSize(24)
+}
+
+h3{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	color: $white;
+	@include fontSize(20);
+}
+
+h4{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: $white;
+	@include fontSize(16);
+}
+
+h5{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: $fontblack;
+	@include fontSize(16);
+	margin-top: 30px;
+}
+
+@mixin fontSize($scale) {
+		font-size: $scale * 1px;
+		font-size: ($scale / 10) * 1rem;
+}
+
+button{
+	background: $teal;
+	color: $white;
+	border-style: none;
+	border-radius: 5px;
+	text-transform: uppercase
+}
+
+.placeButton{
+	background: $teal;
+	color: $white;
+	border: 2px solid $teal;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 13px;
+	width: 150px;
+}
+
+.placeButton a{
+	display: inline-block;
+	padding: 5px;
+}
+
+a:hover .placeButton{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	text-transform: uppercase;	
+	padding-bottom: 13px;
+	width: 148px;
+	border: 2px solid $teal;
+	transition: all 0.5s;
+}
+
+.placeButton img{
+	padding-right: 5px;
+}
+	
+.specialButton{
+	background: $teal;
+	color: $white;
+	border-style: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+.specialButton a{
+	display: inline-block;
+	padding: 5px;
+}
+
+.specialButton a:hover{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: all 0.5s;
+	// padding: 5px;	
+}
+
+.topButton{
+	background: $teal;
+	color: $white;
+	border: 2px solid $teal;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	width: 180px;
+}
+
+.topButton a{
+	display: inline-block;
+	padding: 5px;
+}
+
+a:hover .topButton{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	text-transform: uppercase;	
+	padding-bottom: 15px;
+	width: 178px;
+	border: 2px solid $teal;
+	transition: all 0.5s;
+}
+
+
+.topButton img{
+	padding-right: 10px;
+	padding-top: 5px;
+
+}
+
+.searchNowButton{
+	background: $teal;
+	color: $white;
+	border: 2px solid $teal;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 5px;
+	width: 178px;
+}
+
+.searchNowButton a{
+	display: inline-block;
+	padding: 5px;
+}
+
+a:hover .searchNowButton{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	text-transform: uppercase;	
+	padding-bottom: 10px;
+	width: 178px;
+	border: 2px solid $teal;
+	transition: all 0.5s;
+}
+
+.searchNowButton img{
+	padding-right: 10px;
+}
+
+.buttonSea{
+	z-index: 999;
+	background: $teal;
+	color: $white;
+	border-style: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	// padding: 5px;
+}
+
+.buttonSea a{
+	display: inline-block;
+	padding: 5px;
+}
+
+.buttonSea a:hover{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: all 0.5s;
+	padding: 5px;
+}
+
+.buttonSea img{
+	padding-right: 5px;
+}
+
+.subTitles h2{
+	font-family: $titleFont;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;	
+	color: $fontblack;
+	@include fontSize(24);
+	margin-top:90px;
+}
+
+.subTitles p{
+	font-family: $bodyFont;
+	// text-transform: uppercase;
+	// letter-spacing: 0.5rem;
+	color: $lightgrey;
+	margin-bottom: 60px;
+}
+
+.popGalleryContent h3{
+	color: $fontblack;
+	margin-top: 40px;
+}
+
+.popGalleryContent p{
+	color: $lightgrey;
+	line-height: 20px;
+}
+
+.popGalleryContent2 h3{
+	color: $fontblack;
+	margin-top:40px;
+}
+
+.popGalleryContent2 p{
+	color: $lightgrey;
+	line-height: 20px;
+}
+
+i.fa-bars{
+	display: none;
+}
+
+.flexplicit{
+	display: flex!important;
+}
+
+// Header
+header.top{
+	background: url(assets/images/hero.jpg) no-repeat center;
+	max-width: 100%;
+	background-size: cover;
+	padding-bottom: 50px;
+
+}
+
+.headerLogo{
+	margin: 0;
+	padding: 0;
+}
+
+.bodyWrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+p.titleSub{
+	color: $lightgrey;
+	line-height: 20px;
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 45px;
+	padding-top: 40px;
+}
+
+nav.nav1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav1list ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin: auto;
+		position: relative;
+	}
+
+.nav1list li a{
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	// @include font-family: $titleFont;
+	/*justify-content: space-between;*/
+}
+
+.nav1list a:hover{
+	color: $teal;
+	background: rgba(0,0,0,0.5);
+	text-decoration: none;
+	padding: 10px;
+	transition: all 0.5s;
+}
+
+ul.menuSub{
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	position: absolute;
+}
+
+.nav1list ul li:hover ul.menuSub{
+	display: block;
+	transition: all 0.5s;
+}
+
+.mainWrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.headerTitle h4{
+	padding-top: 100px;
+	padding-bottom: 15px;
+}
+
+.headerTitle h6{
+	padding-top: 170px;
+	padding-bottom: 15px;
+	font-family: $bodyFont;
+	color: $white;
+	font-weight: 400;
+	@include fontSize(14);
+	text-transform: uppercase;
+	line-space: 0.5rem;
+}
+
+.headerTitle img{
+	padding-left: 10px;
+}
+
+.headerTitle h1, .secondHeaderTitle{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.secondHeaderTitle{
+	display: none;
+}
+
+.nav2{
+	padding-top: 190px;
+}
+
+.nav2A li{
+	text-transform: uppercase;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.nav2A ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.nav2 a {
+	display: inline-block;
+	padding: 10px;
+}
+
+.nav2A	 a:hover{
+	color: $white;
+	background: rgba(0,0,0,0.5);
+	text-decoration: none;
+	
+}
+
+.nav2form{
+	padding: 60px 0 40px 0;
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	& > * {
+	flex: 1 0 auto;
+	}
+}
+
+.nav2form p{
+	margin-bottom: 30px;
+}
+
+span.lightgrey{
+	color: $lightgrey;
+}
+
+.nav2form button{
+	margin: 30px;
+	padding: 10px;
+}
+
+input.search{
+	width: 150px;
+	padding: 10px;
+	border-radius:5px;
+	border: none;
+	background: rgba(0,0,0,0.2);
+	color: $white;
+	border: 1px $lightgrey solid;
+	font-size: 10px;
+}
+
+.numbers{
+	@include fontSize(18);
+	border-left: 1px solid $white;
+	padding-left: 7px;
+}
+
+// Sea Tours Section
+
+.seaTours{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.seaTours ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+ul.seaGallery li{
+	position: relative
+}
+
+p.overlay{
+	color: white;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	margin: 0;
+	padding-top: 50%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+ul.seaGallery li:hover .overlay{
+	opacity: 1;
+}
+
+.seaTours button{
+	margin-bottom: 45px;	
+	margin-top: 15px;
+}
+
+.seaTours li{
+	width: 31.8%;
+	border-radius: 5px;
+	padding-top: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+.seaTourGroup p{
+	text-transform: uppercase;
+	color: $lightgrey;
+}
+
+.groupnumber{
+	color: $white;
+}
+
+.seaTourGroup img{
+	padding-right: 5px;
+}
+
+.seaTourGroup{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90%;
+	margin-left: 15px;
+	text-align: left;
+}
+
+.seaTours li.bolivia{
+	background-image: url(assets/images/tour-1.jpg);
+
+}
+
+.seaTours li.patagonia{
+	background-image: url(assets/images/tour-2.jpg);
+}
+
+.seaTours li.torresDel{
+	background-image: url(assets/images/tour-3.jpg);
+}
+
+.seaTours li.santorini{
+	background-image: url(assets/images/tour-4.jpg);
+}
+
+.seaTours li.turkey{
+	background-image: url(assets/images/tour-5.jpg);
+}
+
+.seaTours li.china{
+	background-image: url(assets/images/tour-6.jpg);
+}
+
+// Bavaria Packages Section
+
+// .bavariaPackages{
+// 	background: url(assets/images/banner.jpg) no-repeat center;
+// 	height: 50vh;
+// 	margin-top: 70px;
+
+// }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// .gallery {
+//   background: #EEE;
+// }
+
+.gallery-cell1 {
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  background: url(assets/images/banner.jpg) no-repeat center;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell1:before {
+  display: block;
+  text-align: center;
+  content: gallery-cell1;
+  line-height: 200px;
+}
+
+.gallery-cell2 {
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  background: url(assets/images/thailand.jpg) no-repeat center;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell2:before {
+  display: block;
+  text-align: center;
+  content: gallery-cell2;
+  line-height: 200px;
+}
+
+.gallery-cell3 {
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  background: url(assets/images/indonesia.jpg) no-repeat center;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell3:before {
+  display: block;
+  text-align: center;
+  content: gallery-cell3;
+  line-height: 200px;
+}
+
+.gallery-cell4 {
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  background: url(assets/images/vietnam.jpg) no-repeat center;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell4:before {
+  display: block;
+  text-align: center;
+  content: gallery-cell4;
+  line-height: 200px;
+}
+
+.bavariaPackages{
+	margin-top: 60px;
+}
+
+.bavariaPackages h3{
+	padding-top: 50px;
+	margin-bottom: 40px;
+}
+// Special Offers Section
+
+.specialDetails{
+	text-align: left;
+}
+
+.chevRight{
+	margin-left:90%;
+}
+
+.chevLeft{
+	margin-right:100%;
+}
+
+.detailSpecialOffers{
+	display: flex;
+	flex-wrap: flex;
+	justify-content: space-between;
+	width: 80%;
+	padding-top: 40px;
+}
+
+li.chinaSpecial, li.greeceSpecial, li.canadaSpecial{
+	width: 90%;
+	padding: 30px;
+}
+
+.specialOffers{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.specialOffers ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+.specialOffers li{
+	width: 31.8%;
+	border-radius: 5px;
+	background-size: cover;
+}
+
+.specialOffers li.greeceSpecial{
+	background-image: url(assets/images/greece.jpg);
+}
+
+.specialOffers li.chinaSpecial{
+	background-image: url(assets/images/china.jpg);
+}
+
+.specialOffers li.canadaSpecial{
+	background-image: url(assets/images/canada.jpg);
+}
+
+// Popular Countries Section
+
+.galleryPopular h4{
+	line-height: 20px;
+}
+
+.galleryPopular p{
+	line-height: 10px;
+}
+
+.popularCountries{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+.popCountryWrapper{
+	text-align: left;
+}
+
+.italyEurope{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popGalleryContent{
+	background: url(assets/images/italymap.png) no-repeat center;
+	width: 50%;
+	padding-left: 20px;
+	// text-align: left;
+}
+
+.popGalleryContent li{
+	list-style-type: disc;
+}
+
+.popGalleryContent2{
+	background: url(assets/images/francemap.jpg) no-repeat center;
+	width: 50%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.popGalleryContent2 li{
+	list-style-type: disc;
+}
+
+.popGalleryContent2 ul{
+	list-style-position: inside;
+}
+
+.galleryPopular{
+	width: 48%;
+	margin: 0 auto;
+}
+
+.galleryPopular ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+.galleryPopular li{
+	width: calc(50% - 10px);
+	margin: 5px;
+	height: 190px;
+	border-radius: 5px;
+	padding-top: 80px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	line-height: 5px;
+	text-transform: uppercase;
+}
+
+.tealfont{
+	color: $teal;
+}
+
+.group1, .group2, .group3{
+	width: 25%;
+}
+
+.bestCities{
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	padding-bottom: 25px;
+}
+
+.bestCities2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: space-between;
+	padding-bottom: 25px;
+}
+
+.bestCities ul{
+	color: $lightgrey;
+	margin-left: 15px;
+}
+
+.bestCities li{
+	text-align: left;
+	margin:0 0 10px 0; 
+}
+
+.bestCities2 ul{
+	color: $lightgrey;
+
+}
+
+.bestCities2 li{
+	text-align: right;
+	margin:0 0 10px 0; 
+	list-style-type: inside;
+}
+
+.franceEurope{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+
+
+.galleryPopular li.maecenas{
+	background: url(assets/images/italy-small.jpg) no-repeat center;
+}
+
+.galleryPopular li.aenean{
+	background: url(assets/images/italy-small4.jpg) no-repeat center;
+}
+
+.galleryPopular li.pellentesque{
+	background: url(assets/images/italy-small2.jpg) no-repeat center;
+}
+
+.galleryPopular li.donec{
+	background: url(assets/images/italy-small3.jpg) no-repeat center;
+}
+
+
+
+.galleryPopular li.maecenas2{
+	background: url(assets/images/francesmall4.jpg) no-repeat center;
+}
+
+.galleryPopular li.aenean2{
+	background: url(assets/images/francesmall3.jpg) no-repeat center;
+}
+
+.galleryPopular li.pellentesque2{
+	background: url(assets/images/francesmall2.jpg) no-repeat center;
+}
+
+.galleryPopular li.donec2{
+	background: url(assets/images/francesmall1.jpg) no-repeat center;
+}
+
+// Footer
+
+footer{
+	background: $footblack;
+	text-align: left;
+}
+
+.footerWrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.mainFooter{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.mainFooter p{
+	text-transform: uppercase;
+	font-family: $titleFont;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+}
+
+.mainFooter li a{
+	color: $lightgrey;
+}
+
+.tourBest a:hover{
+	color: $teal;
+}
+
+.popCount a:hover{
+	color: $teal;
+}
+
+.popCount2 a:hover{
+	color: $teal;
+}
+
+.popCountDiv{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.socialSection{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.socialButtons li{
+	margin-bottom: 5px;
+	width: 100px;
+	border-radius: 5px;
+	padding-left: 15px;
+}
+
+.numberButtons li{
+	margin: 0;
+	padding: 0;
+	width: 25px;
+	background:$white;
+	border-radius: 5px;
+	color: $fontblack;
+	font-family: $socialFont;
+	font-weight: 900;	
+	@include fontSize(12);
+	text-align: center;
+	padding: 5px;
+	margin-bottom:5px;
+}
+
+.social li.facebook{
+	background: $facebook;
+	font-family: $socialFont;
+}
+
+.social li.twitter{
+	background: $twitter;
+	font-family: $socialFont;
+}
+
+.social li.google{
+	background: $google;
+	font-family: $socialFont;
+}
+
+.social li.pinterest{
+	background: $pinterest;
+	font-family: $socialFont;
+}
+
+form.subcribeMe{
+	background: $fontblack;
+	width: 500px;	
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.inputBlockemail{
+	position: relative;
+}
+
+.inputBlockemail img{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+}
+
+input.email{
+	width: 200px;
+	padding: 10px;
+	border-radius:5px;
+	border: 1px solid $lightgrey;
+	background: $fontblack;
+	color: $lightgrey;
+	margin-top: 15px;
+
+}
+
+input.submit{
+	border-radius: 5px;
+	border: none;
+	background: $teal;
+	color: $white;
+	font-weight: 900;
+	padding: 8px;
+	width: 200px;
+	padding:10px;
+	border-radius: 5px;
+	@include fontSize(12);
+	font-family: $titleFont;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.bottomFooterWrapper{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.bottomFooter{
+	background: $navblack;
+}
+
+.bottomFooter{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navFooter li a{
+	color: $white;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-family: $titleFont;
+	font-weight: 900;
+}
+
+.navFooter li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 25px 15px 0;
+}
+
+.navFooter a:hover{
+	color: $teal;
+}
+
+.mainFooter li a{
+	line-height: 25px;
+}
+
+.copyright{
+	color: $lightgrey;
+	font-family:$titleFont;
+	font-weight: 900;
+}
+
+@media(max-width: 919px){
+	.nav1list li.navNone{
+	display: none;
+	}
+
+	// .searchNowButton{
+	// margin: 0;
+	// }
+	
+	.popCount{
+	display: none;
+	}
+	
+	.nav2responsive{
+		display: none;
+	}
+
+	button.searchNowButton{
+		margin-left: 200px;
+	}
+	input.search{
+	width: 350px;
+	}
+	.nav2form{
+		text-align: center;
+	}
+}
+
+@media(max-width: 827px){
+	.seaTours li{
+	width: 48%;
+	border-radius: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10px;
+	}
+}
+
+@media(max-width: 815px){
+	button.searchNowButton{
+		margin-left: 150px;
+	}
+}
+
+
+@media(max-width: 767px){
+	.specialDetails li{
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 0;
+	}
+	.detailSpecialOffers{
+	padding-top: 1px;
+	}
+	.detailOffers{
+	padding: 0px;
+	}
+	.specialOffers li{
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+	.tourBest{
+	display: none;
+	}
+	p.titleSub{
+		width: 70%;
+	}
+	button.searchNowButton{
+		margin-left: 200px;
+	}
+	.headerTitle{
+	display: none;
+	}
+
+	.secondHeaderTitle{
+	display: block;
+	}
+
+	.secondHeaderTitle h1{
+	@include fontSize(30);
+	}
+
+	.nav2A{
+		display: none;
+	}
+
+	.nav2{
+	padding-top: 0px;
+	}
+
+	.nav2form{
+	padding-top: 0px;
+	}
+
+	ul.hamburgerNav{
+	z-index: 999999;
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0; 
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,0.7);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+
+	.nav1list ul li:hover ul.menuSub{
+	display: none;
+	}
+
+	ul.hamburgerNav li{
+		flex: 1 0 auto;
+	}
+
+	ul.hamburgerNav li a{
+		color: black;
+		font-size: 2.5rem;
+	}
+
+	i.fa-bars{
+	display: inline-block;
+	cursor: pointer;
+	}
+
+	.chevRight{
+	display: none;
+	}
+	.chevLeft{
+	display: none;
+	}
+}
+
+
+// Hamburger Menue and create a search bar
+@media(max-width: 588px){
+	.seaTourGroup{
+		display: none;
+	}
+	.bavariaPackages{
+		display: none;
+	}
+	
+	.social{	
+	display: none;
+	}
+	.galleryPopular{
+		width: 100%;
+	}
+	.popGalleryContent, .popGalleryContent2{
+		display: none;
+	}
+
+	.subTitles p{
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 480px){
+	li.patagonia, li.china{
+	display: none;	
+	}
+	// .galleryPopular li{
+	// padding: 0px;
+	// }
+	.popularCountries{
+	display: none;
+	}
+
+
+
+
+}
+
+
+
+
+
+
